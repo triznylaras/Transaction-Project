@@ -37,10 +37,9 @@ public class Homepage extends Fragment {
         myDB = new DatabaseHelper(getActivity());
 
         tv_total_expense = (TextView) view.findViewById(R.id.tv_total_expense);
-
         tv_total_income = (TextView) view.findViewById(R.id.tv_total_income);
-
         tv_balance_amount = (TextView) view.findViewById(R.id.tv_balance_amount);
+
         fragmentHomeExRecycleView = (RecyclerView) view.findViewById(R.id.fragmentHomeExRecyclerView);
         fragmentHomeInRecyclerView = (RecyclerView) view.findViewById(R.id.fragmentHomeInRecyclerView);
 
@@ -69,10 +68,10 @@ public class Homepage extends Fragment {
 
         }
 
-        //menampilkan hasil total expense dengan format koma
+        //menampilkan hasil total expense dengan format titik
         tv_total_expense.setText(String.format("%,8d%n",total_expense));
 
-        Log.e("jumlah expense",String.valueOf(total_expense));
+        //Log.e("jumlah expense",String.valueOf(total_expense));
 
 
 

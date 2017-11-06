@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1069075165670",
+    "firebase_url": "https://incomeexpense-372dd.firebaseio.com",
+    "project_id": "incomeexpense-372dd",
+    "storage_bucket": "incomeexpense-372dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069075165670:android:37fc510a42f96424",
+        "android_client_info": {
+          "package_name": "com.example.triznylarasati.incomeexpense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069075165670-u1ev59vaj1ebk52oaoveh6ofk5ecrarj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.triznylarasati.incomeexpense",
+            "certificate_hash": "4efd681fdbae7579834422bcd4cedaec702db631"
+          }
+        },
+        {
+          "client_id": "1069075165670-e5oj3alblkdb6v86un10q2bcpuonkkvh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1A-3eS-kUM1CdKul2djsXMWD3aEoYvC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069075165670-e5oj3alblkdb6v86un10q2bcpuonkkvh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

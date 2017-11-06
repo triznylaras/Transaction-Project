@@ -26,25 +26,28 @@ public class HomepageFragmentAdapterExpense extends RecyclerView.Adapter<Homepag
         this.activity = activity;
     }
 
+    //method untuk menambah data inName inAmount dan mentrigger recyclerview
     public void add(final String upName, final String upAmount) {
         this.exName.add(upName);
         this.exAmount.add(upAmount);
         notifyItemInserted(this.exName.size());
     }
 
-
+    //method untuk menyiapkan template recyclerview
     @Override
     public HomepageFragmentAdapterExpense.Viewholder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new HomepageFragmentAdapterExpense.Viewholder(LayoutInflater.from(parent.getContext()).
                 inflate(R.layout.activity_home_fragment_ex_text, parent, false));
     }
 
+    //method untuk menyiapkan viewholder untuk mengisi elemen data-data ke textview
     @Override
     public void onBindViewHolder(HomepageFragmentAdapterExpense.Viewholder holder, int position) {
         holder.tv_expense_name.setText(String.format("%s",exName.get(position)));
         holder.tv_expense_amount.setText(String.format("%s",exAmount.get(position)));
     }
 
+    //method untuk menghitung banyaknya data berdasarkan inName dan mentrigger notifyItemInserted
     @Override
     public int getItemCount() {
         int size = exName.size();
@@ -52,6 +55,7 @@ public class HomepageFragmentAdapterExpense extends RecyclerView.Adapter<Homepag
         return size;
     }
 
+    //class untuk memasukkan viewholder ke textview
     public class Viewholder extends RecyclerView.ViewHolder {
 
         public final TextView tv_expense_name;
